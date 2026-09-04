@@ -1,0 +1,1 @@
+scp hello pi@raspberrypi.local:~/ && ssh pi@raspberrypi.local './hello'
