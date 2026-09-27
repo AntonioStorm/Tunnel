@@ -1,2 +1,9 @@
-export PATH=$HOME/rpi-tools/arm-bcm2708/arm-linux-gnueabihf/bin:$PATH
-arm-linux-gnueabihf-gcc -march=armv6 -mfpu=vfp -mfloat-abi=hard hello.c -o hello
+arm-linux-gnueabihf-gcc \
+    -I$HOME/rpi-sysroot/usr/include \
+    -L$HOME/rpi-sysroot/usr/lib/arm-linux-gnueabihf \
+    -march=armv6 \
+    -mfpu=vfp \
+    -mfloat-abi=hard \
+    hello.c \
+    -lgpiod \
+    -o hello

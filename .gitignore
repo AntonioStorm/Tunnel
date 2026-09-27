@@ -53,3 +53,21 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Pasta de build do CMake
+build/
+
+# Arquivos gerados pelo CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Editores/IDEs
+.vscode/
+.idea/
+*.swp
+
+# Binário final compilado (ajuste o nome pro seu executável real)
+Tunnel
